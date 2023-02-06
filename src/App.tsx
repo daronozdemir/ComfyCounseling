@@ -7,11 +7,11 @@ import Chat from "./Components/Chat/Chat";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App h-screen">
       <Navigation />
 
-      <Chat host="localhost" port={5505} useHttps={true} />
-      {/* <Chatbot /> */}
+      {/* <Chat host="localhost" port={5505} useHttps={true} /> */}
+      <Chatbot />
     </div>
   );
 }

@@ -6,7 +6,7 @@ import "./Navigation.scss";
 const Navigation = () => {
   const Layout = () => {
     return (
-      <nav className="navbar rounded bg-secondary">
+      <nav className="navbar rounded bg-primary">
         <div className="flex-1">
           <Link
             to="/"
@@ -20,7 +20,7 @@ const Navigation = () => {
             <div className="content-center">
               <Link
                 to="/analytics"
-                className="w-20 bg-base-100 btn btn-square btn-ghost"
+                className="w-24 bg-base-100 btn btn-square btn-ghost"
               >
                 Analytics
               </Link>
