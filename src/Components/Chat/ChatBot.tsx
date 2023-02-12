@@ -73,8 +73,6 @@ const Chatbot: React.FC = () => {
     });
     const openai = new OpenAIApi(configuration);
 
-    let response: string;
-
     return openai
       .createCompletion({
         model: "text-davinci-003",
@@ -90,8 +88,8 @@ const Chatbot: React.FC = () => {
       .then((res) =>
         // (res) => console.log(res)
         res.data.choices[0].text != undefined
-          ? (response = res.data.choices[0].text)
-          : (response = "Sorry, something went wrong")
+          ? res.data.choices[0].text
+          : "Sorry, something went wrong"
       );
   };
 
