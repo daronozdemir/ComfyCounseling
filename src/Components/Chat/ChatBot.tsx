@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Logger } from "sass";
-import "./Chatbot.scss";
 import axios from "axios";
 import counseler from "../../assets/Counseler.png";
 import loui from "../../assets/Loui.png";
