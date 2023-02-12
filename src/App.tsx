@@ -3,15 +3,15 @@ import reactLogo from "./assets/react.svg";
 import "./App.css";
 import Navigation from "./Components/Navigation/Navigation";
 import Chatbot from "./Components/Chat/ChatBot";
-import Chat from "./Components/Chat/Chat";
+import { RouterProvider } from "react-router";
+import { createBrowserRouter } from "react-router-dom";
+import About from "../Pages/About/About";
+import ErrorPage from "../Pages/Error/ErrorPage";
 
 function App() {
   return (
     <div className="App h-screen">
       <Navigation />
-
-      {/* <Chat host="localhost" port={5505} useHttps={true} /> */}
-      <Chatbot />
     </div>
   );
 }

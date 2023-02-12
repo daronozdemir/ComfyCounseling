@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 body {
+  overflow-y: hidden;
   margin: auto;
-  width: 75%;
+  width: 100%;
 }
 
 ::-webkit-scrollbar-thumb:hover {
